@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <!--
+    Programmer: John VanDyke
+    Class ID: jvandyk5713
+    Lab #2: Sell Sell Sell
+    CIS 2610: Business Mobile Programming
+    Fall 2015
+    Due date: 10/23/2015
+    Date completed: 10/20/15
+    *************************************
+    This XML file contains the layout for the Main Activity.  All the widgets on the main activity
+    are laid out here.  There is an EditText widget, that allows for the user to input the number of fruit they would like to purchase.
+    This file contains a RadioGroup, which has 4 RadioButtons nested inside it
+    so only one RadioButton can be clicked.  There is also a Button that is clicked when the user is
+    ready to purchase their fruit.  Finally, there is a TextView that is used by MainActivity.java
+    to setText in the string so the user knows how much they're going to pay for the fruit.
+    *************************************
+    Please note: Be careful where you place XML comments. They are
+    best situated outside of each XML element.
+    -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtViewTitle"
+        android:id="@+id/txtViewTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edtTextFruit"
+        android:hint="@string/edtTextFruit"
+        android:layout_below="@+id/txtViewTitle"
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/txtViewTitle"
+        android:layout_alignStart="@+id/txtViewTitle" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTextFruit"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radGroupFruit">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radButtonApple"
+            android:id="@+id/radButtonApple"
+            android:checked="true"
+            android:textColor="#9a0000" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radButtonOrange"
+            android:id="@+id/radButtonOrange"
+            android:textColor="#ffa600" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radButtonGrapes"
+            android:id="@+id/radButtonGrape"
+            android:textColor="#a216034f" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radButtonWatermelon"
+            android:id="@+id/radButtonWatermelon"
+            android:textColor="@color/clrWatermelon" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnGetFruit"
+        android:id="@+id/btnGetFruit"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/radGroupFruit"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtViewFeedback"
+        android:id="@+id/txtViewFeedback"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+</RelativeLayout>

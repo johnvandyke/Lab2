@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+    Programmer: John VanDyke
+    Class ID: jvandyk5713
+    Lab #2: Sell Sell Sell
+    CIS 2610: Business Mobile Programming
+    Fall 2015
+    Due date: 10/14/2015
+    Date completed: 10/13/15
+    *************************************
+    Colors.xml contains all of the colors that are used in the application.  In this case,
+    there are only four text colors that are defined in this file.  These colors are used on
+    each of the RadioButtons to display the color of actual fruit.
+    *************************************
+    Please note: Be careful where you place XML comments. They are
+    best situated outside of each XML element.
+    -->
+
+<resources>
+    <color name="clrGrapes">#a216034f</color>
+    <color name="clrApple">#9a0000</color>
+    <color name="clrOrange">#ffa600</color>
+    <color name="clrWatermelon">#FF007806</color>
+</resources>
